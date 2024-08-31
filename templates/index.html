@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website of Tariq Haoudi.">
+    <meta name="author" content="Tariq Haoudi">
+
+    
+    <!-- ملف CSS الخاص بك -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    
+    <!-- ملفات أخرى مثل Bootstrap -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- الأيقونة -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo.png') }}">
+    
+    <!-- خطوط Remixicon و Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <title>{{ title }}</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark border border-info">
+    <div class="container-fluid">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" class="small-icon">
+        <a class="navbar-brand px-5" href="#">Tariq Haoudi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto px-5">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#media">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+      <section id="Home" class="bg-dark text-light text-center text-sm-start py-5">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-center">
+                <div class="py-3"> 
+                    <h1 class="display-5">serves <span class="text-info">web</span></h1>
+                    <p class="py-1 lead">WELCOME TO promiere generation MY PERSNELE WEb APPLICATION this is my acont pertionan ,
+                         here you can see my conpetonce end mes sertifica et mes education
+                        </p>
+                        <button class="btn btn-info"><a href="#contact">contact nous</a></button>
+                </div>
+                <img class=" d-sm-block img-fluid w-50" src="{{ url_for('static', filename='img/tariq_haoudi.png') }}" alt="personelle phuto">
+            </div>
+        </div>
+      
+      </section>
+      <section id="about" class="py-5">
+        <div class="container text-center text-sm-start py-5">
+          <div class="row align-items-center justify-content-center">
+            
+            <div class="col-md p-5">
+              <h2>tariq haoudi</h2>
+              <h5>Âge</h5>22 ans
+              <h5>Adresse</h5>
+              Mobilité , ouzzane, Maroco
+              <h5>Langue</h5>
+              Anglais, Français
+              <h5>linkedin</h5>
+              <a href="https://www.linkedin.com/in/tariq-haoudi-bb0b0526a" target="_blank">www.linkedin.com/in/tariq-haoudi-bb0b0526a</a>
+              <h2>éducation</h2>
+              <h5>Faculté de science et technique du Tanger</h5>
+              me année du Licence en Analytique des données 2023 - 2024
+              <h5>Faculté de science et technique du Tanger</h5>
+              Diplôme du DEUST ( 1er et 2ème année) en Mipc 2020- 2023
+              <h5>Lycée d état de Morocoo</h5>
+              Baccalauréat Sciènes phtisique 2019- 2020
+
+
+              <p></p>
+            </div>
+            <div class="col-md p-4">
+              <img class="d-sm-block img-fluid m-5" src="{{ url_for('static', filename='img/about.svg') }}" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="servese" class="bg-dark">
+        <div class="container">
+
+            <div class="py-3 row justify-content-center text-center"> 
+              <h1 class="display-5"> <span class="text-info">Our servese offers</span></h1>
+              <p class="py-1 lead">We are committed to your satisfaction
+
+              </p>
+                  <button class="btn btn-info "  style="width: 150px;"><a href="#contact">contact nous</a></button>
+            </div>
+            <div class="row justify-content-center text-center  my-3">
+                <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="card mb-5 bg-dark text-light border border-info" style="width: 18rem;">
+                      <i class="bi bi-cloud h1"></i> 
+                        <div class="card-body">
+                            <h5 class="card-title text-info">web application</h5>
+                            <p class="card-text">Create a personal website, restaurant site, or store website that works via a link or QR code scan</p>
+                            <p >
+                              <del>$30.00</del>
+                              <span class="text-warning">$25.00</span>
+                            </p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="card mb-5 bg-dark text-light border border-info" style="width: 18rem;">
+                      <i class="bi bi-border-style h1"></i> 
+                        <div class="card-body">
+                            <h5 class="card-title text-info">Design services</h5>
+                            <p class="card-text">creating business cards, restaurant cards, posters, logos, and more...</p>
+                            <p>
+                              <del>$10.00</del>
+                              <span class="text-warning">$2.00-$10.00</span>
+                            </p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center ">
+                    <div class="card mb-5 bg-dark text-light border border-info " style="width: 18rem;">
+                      <i class="bi bi-database h1 Pt-5"></i>                        <div class="card-body">
+                            <h5 class="card-title text-info">Data Analyst services</h5>
+                            <p class="card-text">creating business cards, restaurant cards, posters, logos, and more...</p>
+                            <p>
+                              <del>(-__-)</del>
+                              <span class="text-warning"> Not available                              </span>
+                            </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="container mt-5 p-5">
+      <h2 class="text-uppercase font-weight-bold text-center mb-5">Our History</h2>
+      <div class="row mb-4 justify-content-center d-flex ">
+          <div class="col-md-2 col-sm-4 mb-4 ">
+              <img src="{{ url_for('static', filename='img/img1.jpeg') }}" alt="Image 1" class="img-fluid custom-img rounded-lg shadow-sm">
+          </div>
+          <div class="col-md-2 col-sm-4 mb-4 ">
+              <img src="{{ url_for('static', filename='img/img2.jpeg') }}"alt="Image 2" class="img-fluid custom-img rounded-lg shadow-sm">
+          </div>
+          <div class="col-md-2 col-sm-4 mb-4 ">
+              <img src="{{ url_for('static', filename='img/img3.jpeg') }}" alt="Image 3" class="img-fluid custom-img rounded-lg shadow-sm">
+          </div>
+          <div class="col-md-2 col-sm-4 mb-4 ">
+              <img src="{{ url_for('static', filename='img/img4.jpeg') }}" alt="Image 4" class="img-fluid custom-img rounded-lg shadow-sm">
+          </div>
+          <div class="col-md-2 col-sm-4 mb-4 ">
+              <img src="{{ url_for('static', filename='img/img5.jpeg') }}" alt="Image 5" class="img-fluid custom-img rounded-lg shadow-sm">
+          </div>
+      </div>
+      <div class="row justify-content-center">
+          <div class="col-md-6 col-sm-8">
+              <img src="{{ url_for('static', filename='img/img6.jpeg') }}" alt="Image 6" class="img-fluid custom-img rounded-lg shadow-sm">
+          </div>
+      </div>
+  </section>
+
+ <!-- سخؤاثم كثيهض -->
+  <section id="media" class="bg-dark">
+    <div class="container">
+
+        <div class="py-3 row justify-content-center text-center"> 
+          <h1 class="display-5"> <span class="text-info">FoLLOW US</span></h1>
+
+          </p>
+                </div>
+        <div class="row justify-content-center text-center  my-3">
+            <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="card mb-5 bg-dark text-light border border-info" style="width: 18rem;">
+                  <i class="ri-linkedin-box-fill h1 Pt-5"></i> 
+                    <div class="card-body">
+                        <h5 class="card-title text-info">linkdin</h5>
+                        <button class="btn btn-info">                                                <a href="https://www.linkedin.com/in/tariq-haoudi-bb0b0526a" target="_blank">lien</a>
+                        </button>
+                        </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="card mb-5 bg-dark text-light border border-info" style="width: 18rem;">
+                  <i class="ri-github-fill h1 Pt-5"></i> 
+                    <div class="card-body">
+                        <h5 class="card-title text-info">github</h5>
+                        <button class="btn btn-info">                        <a href="https://github.com/Tariq-Haoudi-FST/" target="_blank">lien</a>
+                        </button>
+
+                        </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center ">
+                <div class="card mb-5 bg-dark text-light border border-info " style="width: 18rem;">
+                  <i class="ri-instagram-line h1 Pt-5"></i>                        <div class="card-body">
+                        <h5 class="card-title text-info">instagram</h5>
+                        <button class="btn btn-info">                        <a href="https://www.instagram.com/tariq_cyw/" target="_blank">lien</a>
+                        </button>
+
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center ">
+              <div class="card mb-5 bg-dark text-light border border-info " style="width: 18rem;">
+                <i class="ri-facebook-circle-fill h1 Pt-5"></i>                        <div class="card-body">
+                      <h5 class="card-title text-info">facebook</h5>
+                      <button class="btn btn-info">                        <a href="https://web.facebook.com/profile.php?id=100092229302738" target="_blank">lien</a>
+                      </button>
+
+                      </div>
+              </div>
+          </div>
+
+
+            <!-- <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center ">
+              <div class="card mb-5 bg-dark text-light border border-info " style="width: 18rem;">
+                <i class="ri-facebook-circle-fill h1 Pt-5"></i>                     <div class="card-body">
+
+                </div> <h5 class="card-title text-info">facebook</h5>
+                      <button class="btn btn-info"> <a href="https://web.facebook.com/profile.php?id=100092229302738" target="_blank">lien</a>
+                      </button>
+
+                      </div>
+              </div>
+          </div> -->
+        </div>
+    </div>
+</section>
+    <section id="contact" >
+      <div class="container text-center text-sm-start py-5">
+        <div class="row align-items-center justify-content-center ">
+          <div class="col-md py-4 ">
+            <div class="container mt-5">
+              <h3 class="text-uppercase font-weight-bold">Address</h3>
+              <p><i class="bi bi-geo-alt"></i> 
+                  <a href="https://www.google.co.ma/maps/place/Achakkar,+Tanger/@35.7643618,-5.968657,14z/data=!3m1!4b1!4m9!1m2!2m1!1sHafa!3m5!1s0xd0b88260f7624a5:0xb0c76862fc3eb575!8m2!3d35.7666749!4d-5.9277625!16s%2Fg%2F1hc2vpsc7?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-decoration-none">
+                      Rue Hafa, Tangier
+                  </a>
+              </p>
+              <p><i class="bi bi-telephone"></i> 
+                  <a href="https://wa.me/212718002689" target="_blank" class="text-decoration-none">
+                      +212718002689
+                  </a>
+              </p>
+              <p><i class="bi bi-envelope-at"></i> 
+                  <a href="mailto:tariqhaoudi200205270@gmail.com" target="_blank" class="text-decoration-none">
+                      tariqhaoudi200205270@gmail.com
+                  </a>
+              </p>
+          </div>
+          <div class="container mt-5">
+            <!-- Working Hours Section -->
+            <h2 class="text-uppercase font-weight-bold mb-3">Working Hours</h2>
+            <h5 class="mb-1">7 Days/7 Days</h5>
+            <h5>24 Hours/24 Hours</h5>
+        </div>
+        
+          </div>
+          <div class="col-md py-4 ">
+            <form method="POST" class="contact__form" action="#">
+              {{ form.hidden_tag() }}
+              
+              <div class="mb-3">
+                  {{ form.name.label(class="form-label") }}
+                  {{ form.name(class="form-control") }}
+              </div>
+              
+              <div class="mb-3">
+                  {{ form.email.label(class="form-label") }}
+                  {{ form.email(class="form-control") }}
+              </div>
+              
+              <div class="mb-3">
+                  {{ form.message.label(class="form-label") }}
+                  {{ form.message(class="form-control") }}
+              </div>
+              
+              <div class="mb-3">
+                  {{ form.submit(class="btn btn-primary") }}
+              </div>
+              
+              {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+                      <div class="alert alert-success" role="alert">
+                          {% for message in messages %}
+                              <p>{{ message }}</p>
+                          {% endfor %}
+                      </div>
+                  {% endif %}
+              {% endwith %}
+          </form>
+          
+            <!-- <form action="/send_email" method="POST">
+                <div class="form-group">
+                    <label for="Name">Full Name</label>
+                    <input type="text" class="form-control" name="name" id="Name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="Subject">Subject</label>
+                    <input type="text" class="form-control" name="subject" id="Subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="Message">Message</label>
+                    <textarea class="form-control" name="message" id="Message" cols="30" rows="5" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form> -->
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <footer class="py-4 bg-dark text-white text-center position-relative ">
+      <div class="container">
+        <p class="lead">
+          Copyright &copf; 2024 ALL rights reserved | Made by <samp>
+            tariq haoudi
+          </samp>
+        </p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h2"></i>
+        </a>
+      </div>
+    </footer>
+    
+    
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

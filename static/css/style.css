@@ -1,0 +1,25 @@
+/* لتغيير لون خلفية الزر إلى الأبيض */
+.navbar-toggler {
+background-color: rgba(77, 82, 62, 0.438); /* لون الخلفية الأبيض */
+border-color: white; /* حدود الزر باللون الأبيض لتجنب الحدود الداكنة */
+}
+
+/* لتغيير لون الأيقونة إلى الأسود */
+.navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+} */
+.custom-img {
+width: 100%; /* جعل الصورة تتناسب مع عرض العمود */
+height: 200px; /* تحديد ارتفاع الصورة */
+object-fit: cover; /* جعل الصورة تتناسب مع الإطار */
+padding: 10px rgb(0, 0, 0);
+}
+.small-icon {
+width: 50px; /* تحديد عرض الصورة */
+height: 50px; /* تحديد ارتفاع الصورة */
+margin-left: 20px;
+object-fit: cover; /* الحفاظ على نسبة أبعاد الصورة */
+}
